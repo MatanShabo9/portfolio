@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Matan Shabo — Portfolio</title>
+  <meta name="description" content="One‑page personal site built with Bootstrap: about, skills, projects, and contact." />
+  <meta property="og:title" content="Matan Shabo — Portfolio" />
+  <meta property="og:description" content="One‑page personal site built with Bootstrap: about, skills, projects, and contact." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="/cover.png" />
+  <link rel="icon" href="/favicon.ico" />
+
+  <!-- Bootstrap 5.3 (LTR). For Hebrew RTL, replace with bootstrap.rtl.min.css and set dir="rtl" on <html>. -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root { --accent: #6f42c1; }
+    body { font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", "Helvetica Neue", sans-serif; }
+    .navbar { backdrop-filter: saturate(180%) blur(8px); }
+    .hero {
+      background: radial-gradient(1200px 600px at 10% -10%, rgba(111,66,193,.15), transparent 60%),
+                  radial-gradient(1200px 600px at 110% 10%, rgba(13,110,253,.10), transparent 60%);
+    }
+    .shadow-soft { box-shadow: 0 8px 24px rgba(0,0,0,.08); }
+    .section-title { font-weight: 800; letter-spacing: .2px; }
+    .badge-skill { font-weight: 600; }
+    .avatar { width: 88px; height: 88px; border-radius: 50%; object-fit: cover; }
+    .link-accent { color: var(--accent); }
+    .link-accent:hover { color: #5a33a0; }
+    footer a { text-decoration: none; }
+  </style>
+</head>
+<body>
+  <!-- Nav -->
+  <nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary border-bottom">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#home">MS</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header id="home" class="hero pt-5">
+    <div class="container">
+      <div class="row align-items-center" style="min-height: 80vh;">
+        <div class="col-12 col-lg-7 py-5">
+          <div class="d-flex align-items-center gap-3 mb-3">
+            <img class="avatar" src="https://avatars.githubusercontent.com/u/9919?s=200&v=4" alt="Your profile photo placeholder" />
+            <div>
+              <h1 class="display-5 fw-800 mb-0">Matan Shabo</h1>
+              <p class="text-body-secondary mb-0">Frontend Student · Bootstrap Enthusiast</p>
+            </div>
+          </div>
+          <p class="lead">I build neat, responsive UI with Bootstrap and vanilla JavaScript. Currently studying Computer Science and looking for opportunities to grow on real projects.</p>
+          <div class="d-flex gap-3">
+            <a href="#projects" class="btn btn-primary btn-lg">View Projects</a>
+            <a href="#contact" class="btn btn-outline-secondary btn-lg">Contact Me</a>
+            <!-- Optional: replace # with a real CV file link -->
+            <a href="#" class="btn btn-link link-accent">Download CV</a>
+          </div>
+          <div class="mt-3 small text-body-secondary">*This page is fully responsive and built with Bootstrap 5.3.</div>
+        </div>
+        <div class="col-12 col-lg-5 d-none d-lg-block">
+          <div class="card shadow-soft border-0">
+            <div class="card-body p-4">
+              <h5 class="card-title mb-3">Quick facts</h5>
+              <ul class="list-unstyled mb-0">
+                <li class="mb-2">📍 Based in Israel</li>
+                <li class="mb-2">🎓 B.Sc. Computer Science (Year 3)</li>
+                <li class="mb-2">💡 Interests: Frontend, Data, ML</li>
+                <li class="mb-2">🛠️ Tools: VS Code, Git/GitHub</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- About -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-12 col-lg-6">
+          <h2 class="section-title mb-3">About me</h2>
+          <p>Hello! I'm <strong>Matan</strong>, a CS student focused on clean, accessible interfaces. I enjoy translating product ideas into simple, fast experiences. Beyond classwork, I tinker with mini‑projects and contribute to student initiatives.</p>
+          <p class="mb-0">When I’m not coding, I illustrate children’s stories and play football. I value teamwork, clear communication, and reliable delivery.</p>
+        </div>
+        <div class="col-12 col-lg-6">
+          <div class="row g-3">
+            <div class="col-6">
+              <div class="p-3 border rounded-3 h-100">
+                <div class="small text-body-secondary">Focus</div>
+                <div class="fw-semibold">Frontend, UI, Accessibility</div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="p-3 border rounded-3 h-100">
+                <div class="small text-body-secondary">Currently learning</div>
+                <div class="fw-semibold">JS DOM, Fetch API</div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="p-3 border rounded-3 h-100">
+                <div class="small text-body-secondary">Languages</div>
+                <div class="fw-semibold">Hebrew, English</div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="p-3 border rounded-3 h-100">
+                <div class="small text-body-secondary">Looking for</div>
+                <div class="fw-semibold">Internships & collabs</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="py-5 bg-body-tertiary border-top border-bottom">
+    <div class="container">
+      <h2 class="section-title mb-4">Skills</h2>
+      <div class="d-flex flex-wrap gap-2">
+        <span class="badge text-bg-primary badge-skill">HTML5</span>
+        <span class="badge text-bg-secondary badge-skill">CSS3</span>
+        <span class="badge text-bg-info badge-skill">Bootstrap 5</span>
+        <span class="badge text-bg-dark badge-skill">JavaScript</span>
+        <span class="badge text-bg-success badge-skill">Git & GitHub</span>
+        <span class="badge text-bg-warning text-dark badge-skill">Responsive Design</span>
+        <span class="badge text-bg-light text-dark badge-skill">Accessibility</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="py-5">
+    <div class="container">
+      <h2 class="section-title mb-4">Projects</h2>
+      <div class="row g-4">
+        <!-- Project card 1 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 shadow-soft border-0">
+            <img src="https://picsum.photos/seed/ui/800/500" class="card-img-top" alt="UI project screenshot placeholder" />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Todo App (Vanilla)</h5>
+              <p class="card-text">A simple, accessible todo list with localStorage, no frameworks. Built with Bootstrap utilities.</p>
+              <div class="mt-auto d-flex gap-2">
+                <a class="btn btn-sm btn-primary" href="#" aria-label="Open live demo for Todo App">Live</a>
+                <a class="btn btn-sm btn-outline-secondary" href="#">Code</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Project card 2 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 shadow-soft border-0">
+            <img src="https://picsum.photos/seed/api/800/500" class="card-img-top" alt="API project screenshot placeholder" />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Weather Widget</h5>
+              <p class="card-text">Fetch API + Bootstrap card UI. Shows current weather for a chosen city using a public API.</p>
+              <div class="mt-auto d-flex gap-2">
+                <a class="btn btn-sm btn-primary" href="#">Live</a>
+                <a class="btn btn-sm btn-outline-secondary" href="#">Code</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Project card 3 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 shadow-soft border-0">
+            <img src="https://picsum.photos/seed/responsive/800/500" class="card-img-top" alt="Responsive layout screenshot placeholder" />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Responsive Landing</h5>
+              <p class="card-text">Mobile‑first landing page using Bootstrap grid, utilities, and components with strong a11y.</p>
+              <div class="mt-auto d-flex gap-2">
+                <a class="btn btn-sm btn-primary" href="#">Live</a>
+                <a class="btn btn-sm btn-outline-secondary" href="#">Code</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-5 bg-body-tertiary border-top">
+    <div class="container">
+      <h2 class="section-title mb-3">Contact</h2>
+      <div class="row g-4">
+        <div class="col-12 col-lg-6">
+          <form class="needs-validation" novalidate>
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Your name" required>
+              <div class="invalid-feedback">Please enter your name.</div>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+              <div class="invalid-feedback">Please enter a valid email.</div>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="4" placeholder="How can I help?" required></textarea>
+              <div class="invalid-feedback">Please write a short message.</div>
+            </div>
+            <button class="btn btn-primary" type="submit">Send</button>
+            <div class="form-text mt-2">* Demo only. Hook up Formspree or a backend to receive messages.</div>
+          </form>
+        </div>
+        <div class="col-12 col-lg-6">
+          <div class="p-4 border rounded-3 h-100">
+            <p class="mb-2"><strong>Email:</strong> <a href="mailto:matan@example.com">matan@example.com</a></p>
+            <p class="mb-2"><strong>GitHub:</strong> <a href="https://github.com/yourusername" target="_blank" rel="noreferrer noopener">github.com/yourusername</a></p>
+            <p class="mb-0"><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/yourusername/" target="_blank" rel="noreferrer noopener">linkedin.com/in/yourusername</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-4 border-top">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+      <span class="text-body-secondary">© <span id="year"></span> Matan Shabo</span>
+      <div class="d-flex gap-3 small">
+        <a href="#about" class="link-secondary">About</a>
+        <a href="#projects" class="link-secondary">Projects</a>
+        <a href="#contact" class="link-secondary">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS + simple enhancements -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script>
+    // Footer year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Bootstrap client-side form validation
+    (() => {
+      const forms = document.querySelectorAll('.needs-validation');
+      Array.from(forms).forEach(form => {
+        form.addEventListener('submit', event => {
+          if (!form.checkValidity()) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
+          form.classList.add('was-validated');
+        }, false);
+      });
+    })();
+  </script>
+</body>
+</html>
